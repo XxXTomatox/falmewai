@@ -59,6 +59,7 @@ Flamewai es un framework que puede crecer contigo. Le ayudaremos a dar sus prime
 ---
 En los primeros pasos para comensar a crear tu proyecto deves de crear controller, model,view
 y para eso se le va a dar comandos para hacerlo 
+
 #### Crear un Controller
 
 Para crear un controller se nesesitarar colocar este comando 
