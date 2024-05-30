@@ -4,12 +4,11 @@ namespace controller;
 
 use config\View;
 
-require_once realpath(".../../vendor/autoload.php");
+require_once realpath("./vendor/autoload.php");
 
 class test extends View
 {
-    public function index()
-    {
+    public function index()    {
 
     }
 }
