@@ -106,4 +106,10 @@ Para crear un controller se nesesitarar colocar este comando
 		</div>
 	</div>
  
-	
+## Requicitos
+---
+	-Entorno de desarrollo web: Apache, IIS, Nginx PHP 5.3 o superior.
+ 
+    -Base de datos: MySQL, Sqlite, Postgresql o sqlserver.
+    
+    -Librerías php : Mcrypt.
