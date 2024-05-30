@@ -10,8 +10,25 @@
 
 	git clone https://github.com/XxXTomatox/falmewai.git
 
-3.- si lo tienes en virtual host ir a [[configuración virtual host]] si no sigue al paso 4
+3.- si lo tienes en virtual host ir a configuración virtual host si no sigue al paso 4
+### configuración virtual host
+---
+1.- ir al archivo httpd-vhosts.conf y abrirlo en un editor de texto
 
+2.- agregar este codigo
+
+	<VirtualHost *:80>
+		DocumentRoot "Ruta_De_Tu_Proyecto"
+		ServerName NombreProyecto.local
+	</VirtualHost>
+
+3.-ir a archivo hosts 
+
+4.-agregar la ip y el nombre del server 
+
+	127.0.0.1 NombreProyecto.local
+
+---
 
 4.- instalar las dependencias con el siguientes comando
 
@@ -42,17 +59,51 @@ Flamewai es un framework que puede crecer contigo. Le ayudaremos a dar sus prime
 ---
 En los primeros pasos para comensar a crear tu proyecto deves de crear controller, model,view
 y para eso se le va a dar comandos para hacerlo 
-#### Crear un [[Controller]]
+#### Crear un Controller
 
 Para crear un controller se nesesitarar colocar este comando 
 
 	node flamewai.js controller NombreController
+ 
+ ##### plantilla de controller 
 
-#### Crear un [[Model]]
+	<?php
+	namespace controller;
+	use config\View;
+	require_once realpath("./vendor/autoload.php");
+	class NombreProyecto extends View{
+		public function index() {
+		}
+	}
+	$controlador = new NombreProyecto();
+
+#### Crear un Model
 
 	node falmewai.js model NombreModel
 
-#### Crear una [[View]]
+##### plantilla model
+
+	<?php
+	namespace model;
+	use config\ORM;
+	class test extends ORM{
+		protected $tabla = '';
+		protected $idTabla = '';
+	}
+
+
+#### Crear una View
 
 	node falmewai.js view NombreView
+
+##### plantilla de view
+
+	<div class="container mt-2">
+		<div class="row mt-2 justify-content-center">
+			<div class="col mt-2">
+				plantilla
+			</div>
+		</div>
+	</div>
+ 
 	
