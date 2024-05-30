@@ -4,7 +4,7 @@ namespace config;
 require_once realpath('./vendor/autoload.php');
 class Route
 {
-    private const SERVER = "http://striker.local/";
+    private const SERVER = "http://flamewai.local";
     private const DEP_IMG = self::SERVER . "public/img/";
     private const DEP_JS = self::SERVER . "public/js/";
     private const DEP_CSS = self::SERVER . "public/css/";
