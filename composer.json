@@ -1,0 +1,24 @@
+{
+    "name": "back/practica1",
+    "description": "es la primera practica con composer",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Aecta\\Prueba\\": "app/",
+            "config\\": "app/config/",
+            "controller\\": "app/controller/",
+            "model\\": "app/model/"
+        }
+    },
+    "authors": [
+        {
+            "name": "XxXTomatox",
+            "email": "axelmessimv@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "vlucas/phpdotenv": "^5.6@dev"
+    }
+}
